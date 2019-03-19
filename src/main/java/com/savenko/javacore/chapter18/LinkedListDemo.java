@@ -15,9 +15,10 @@ public class LinkedListDemo {
         linkedList.add(1, "A2");
 
         System.out.println("Исходное содержимое связного списка linkedList: " + linkedList);
-
+        System.out.println("\n" + linkedList.get(2));
         linkedList.remove("F");
         linkedList.remove(2);
+
         System.out.println("содержимое связного списка linkedList псоле удаления элементов: " + linkedList);
 
         linkedList.removeFirst();
