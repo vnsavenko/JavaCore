@@ -1,3 +1,2 @@
-TimesNewRoman
-Tahoma
-Arial
+
+1       Jeans                         100.0   50  

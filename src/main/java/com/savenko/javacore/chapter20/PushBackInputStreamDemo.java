@@ -9,7 +9,7 @@ public class PushBackInputStreamDemo {
     public static void main(String[] args) {
 
 
-     String s = "if (a == 4) a = 0;\n";
+     String s = "if (a == 4) a =00;\n";
      byte buf[] = s.getBytes();
      ByteArrayInputStream in = new ByteArrayInputStream(buf);
      int c;
@@ -19,14 +19,14 @@ public class PushBackInputStreamDemo {
             switch (c) {
                 case '=':
                     if ((c = f.read()) == '=')
-                        System.out.println(".eq.");
+                        System.out.print(".eq.");
                     else {
-                        System.out.println("<-");
+                        System.out.print("<-");
                         f.unread(c);
                     }
                     break;
                 default:
-                    System.out.println((char) c);
+                    System.out.print((char) c);
                     break;
             }
         }
